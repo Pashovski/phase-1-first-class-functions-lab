@@ -10,4 +10,8 @@ function returnLastTwoDrivers(){
     return drivers.slice(2,4)
 }
 
-const selectingDrivers = ['function returnFirstTwoDrivers', 'function returnLastTwoDrivers'];
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
+
+function createFareMultiplier(num){
+    num();
+}
