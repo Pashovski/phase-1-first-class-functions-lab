@@ -4,14 +4,16 @@ function returnFirstTwoDrivers(){
     return drivers.slice(0, 2)
 }
 
-// drivers.slice(0, 2)
-
 function returnLastTwoDrivers(){
     return drivers.slice(2,4)
 }
 
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
 
-function createFareMultiplier(num){
-    num();
+const createFareMultiplier = function(num){
+    return function(fare) {
+        return fare * num;
+
+    }
 }
+
